@@ -54,7 +54,7 @@ end
 	
 However, everything else  a bit less intuitive.
 
-When 'accepts_nested_attributes_for' is added it creates a method which is named in this situation
+When `accepts_nested_attributes_for` is added it creates a method which is named in this situation
 **categories_attributes** or **user_attributes**. It is named after whatever model you happen to be using.
 
 Now that we have gone over how to setup this association we can talk about the method.
