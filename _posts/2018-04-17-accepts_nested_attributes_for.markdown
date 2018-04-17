@@ -1,12 +1,12 @@
 ---
 layout: post
 title:      "Accepts_Nested_Attributes_For"
-date:       2018-04-17 07:48:28 +0000
+date:       2018-04-17 03:48:29 -0400
 permalink:  accepts_nested_attributes_for
 ---
 
 
-So far one of the more difficult topics I have encountered in Rails is nested forms and how it produces HTML and interacts with objects. A first glance it seems simple, it's like a nested array...sort of...right? Well sort of...also not sort of. First off when whitelisting attributes and nested attribute it comes out a hash. Second off, when you add the nested attributes (ie categories_attributes in the following code) it gets confusing. There are very specific naming conventions that must be followed.
+So far one of the more difficult topics I have encountered in Rails is nested forms and how it produces HTML and interacts with objects. A first glance it seems simple, it's like a nested array...sort of...right? Well sort of...also not sort of. First off when white-listing attributes and nested attribute it comes out a hash. Second off, when you add the nested attributes (ie categories_attributes in the following code) it gets confusing. There are very specific naming conventions that must be followed.
 
 
 /app/controllers/posts_controller.rb
@@ -76,7 +76,8 @@ Seems simple. However, it doesn't do what it looks like it does. It intercepts f
 <%= f.fields_for :categories do |category| %>
     <%= category.label :name %>
     <%= category.text_field :name %>
-<% end %>```
+<% end %>
+```
 
 
 will produce `[post][categories_attributes][0][name]`
@@ -86,7 +87,8 @@ will produce `[post][categories_attributes][0][name]`
 <%= f.fields_for :categories_attributes do |category| %>
     <%= category.label :name %>
     <%= category.text_field :name %>
-<% end %>```
+<% end %>
+```
 
 
 will produce `[post][categories_attributes][name]`
