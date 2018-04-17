@@ -18,7 +18,7 @@ So far one of the more difficult topics I have encountered in Rails is nested fo
 ```
 
 
-At first glance just whitelisting the params should work since rails is full of magic. However, in addition, you need to do is add a line in the MODEL that adds methods. Just like `has_many:` adds methods so does `accepts_nested_attributes_for:`
+At first glance just whitelisting the params should work since rails is full of magic. However, in addition, you need to do is add a line in the MODEL that adds methods. Just like `has_many:` adds methods so does `accepts_nested_attributes_for`
 
 /app/models/post.rb
 
@@ -31,7 +31,7 @@ end
 
 
 
-Here is an example with a `belongs_to:` relationship notice it's singular and not plural.
+Here is an example with a `belongs_to` relationship notice it's singular and not plural.
 
 /app/models/comment.rb
 
