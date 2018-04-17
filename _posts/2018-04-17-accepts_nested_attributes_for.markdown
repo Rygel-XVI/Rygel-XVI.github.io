@@ -80,7 +80,7 @@ Seems simple. However, it doesn't do what it looks like it does. It intercepts f
 ```
 
 
-will produce `[post][categories_attributes][0][name]`
+will produce `[post][categories_attributes][0][name]`  
 
 
 ``` 
