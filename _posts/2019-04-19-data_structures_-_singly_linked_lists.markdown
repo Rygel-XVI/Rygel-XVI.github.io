@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Data Structures - Singly Linked Lists"
-date:       2019-04-20 02:30:40 +0000
+date:       2019-04-19 22:30:41 -0400
 permalink:  data_structures_-_singly_linked_lists
 ---
 
@@ -186,4 +186,5 @@ Inserting and deleting from the middle of the list is equally as difficult since
 
 This is why the structures are often used for Stacks and Queues instead of storing data that needs to be organized in any sort of way. With a Stack we are always manipulating the last thing added because it is a last in first out (LIFO) structure and a Queue is a first in first out (FIFO) data structure. We can talk about those a different day. 
 
+Here's a link to my [JS linked-list code](https://github.com/Rygel-XVI/my-linked-list-js)
 
