@@ -1,15 +1,14 @@
 # Site settings
+author: Annette
 title: Driven by Curiosity
 header-img: img/home-bg.png
 email: micha232@umn.edu
-copyright_name: Rygel-XVI
+copyright_name: Annette
 description: > # this means to ignore newlines until "baseurl:"
-  Code Begets Code
+  Discovering my Niche
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  Rygel-XVI
-learn_profile: Rygel-XVI
-email_username: micha232@umn.edu
 
 # Build settings
 markdown: kramdown
@@ -19,5 +18,3 @@ paginate: 5
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
 gems: [jekyll-paginate, jekyll-feed]
-
-theme: jekyll-theme-midnight
