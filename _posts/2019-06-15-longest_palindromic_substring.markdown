@@ -85,7 +85,7 @@ end
 
 
 
-We also need to go through and set matrix\[i][i+1] to true if the characters match else the odd indicies can never be 'true' as you will see when we get to that part of the code.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We also need to go through and set matrix\[i][i+1] to true if the characters match else the odd indicies can never be 'true' as you will see when we get to that part of the code.
 
 
 
@@ -115,7 +115,7 @@ We also need to go through and set matrix\[i][i+1] to true if the characters mat
 
 
 
-Now if we go through the rest of the comparisons checking if the chars are the same and the matrix value is true to the bottom left (\[i+1][j-1]) we will end up filling the matrix as such.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Now if we go through the rest of the comparisons checking if the chars are the same and the matrix value is true to the bottom left (\[i+1][j-1]) we will end up filling the matrix as such.
 
 
 
@@ -153,7 +153,7 @@ Now if we go through the rest of the comparisons checking if the chars are the s
 ```
 
 
-We start with k = 2 since we already filled in the first two diagonals and then each time we increment k we set i = 0 and in the inner loop j = i + k (offset). At the end we can return the substring using the variables we saved. If we put it all together we have...
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We start with k = 2 since we already filled in the first two diagonals and then each time we increment k we set i = 0 and in the inner loop j = i + k (offset). At the end we can return the substring using the variables we saved. If we put it all together we have...
 
 
 
