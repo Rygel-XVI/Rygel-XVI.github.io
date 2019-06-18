@@ -6,10 +6,10 @@ permalink:  longest_palindromic_substring
 ---
 
 
-#### How to find the longest palindromic substring in a string?
+### How to find the longest palindromic substring in a string?
 
 
-##### First we have to answer the question 'What is a palindrome?"
+### First we have to answer the question 'What is a palindrome?"
 
 
 A palindrome is the same backwards and forwards.
@@ -73,7 +73,7 @@ end
 
 
 |   | a | b | b | b | a | b | c |
-|---|---|---|:-:|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | a | T |   |   |   |   |   |   |
 | b |   | T |   |   |   |   |   |
 | b |   |   | T |   |   |   |   |
@@ -103,7 +103,7 @@ We also need to go through and set matrix\[i][i+1] to true if the characters mat
 
 
 |   | a | b | b | b | a | b | c |
-|---|---|---|:-:|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | a | T |   |   |   |   |   |   |
 | b |   | T | T |   |   |   |   |
 | b |   |   | T | T |   |   |   |
