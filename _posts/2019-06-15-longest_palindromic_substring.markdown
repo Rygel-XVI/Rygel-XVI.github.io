@@ -65,9 +65,8 @@ end
 
 
 ```
-    while (i < s.length)
-        matrix[i][i] = true
-        i += 1
+    for n in 0..s.length - 1
+      matrix[n][n] = true
     end
 ```
 
@@ -90,13 +89,12 @@ end
 
 
 ```
-    while (i < s.length - 1)
-        if (s[i] == s[i+1])
-            matrix[i][i+1] = true
-            start = i
-            max = 1
-        end
-         i += 1
+    for m in 0..s.length - 1
+      if (s[m] == s[m+1])
+          matrix[m][m+1] = true
+          start = m
+          max = 1
+      end
     end
 ```
 
@@ -162,10 +160,7 @@ end
 def longest_palindrome(s)
     start = 0
     max = 0
-    i = 0
-    k = 2
 
-## always remember to add base cases!
     if (s.length < 3)
         return "" if (s.length < 1)
         return s[0] if (s.length == 1)
@@ -174,22 +169,20 @@ def longest_palindrome(s)
 
     matrix = Array.new(s.length) {Array.new(s.length)}
 
-    while (i < s.length)
-        matrix[i][i] = true
-        i += 1
+    for n in 0..s.length - 1
+      matrix[n][n] = true
+    end
+
+    for m in 0..s.length - 1
+      if (s[m] == s[m+1])
+          matrix[m][m+1] = true
+          start = m
+          max = 1
+      end
     end
 
     i = 0
-    while (i < s.length - 1)
-        if (s[i] == s[i+1])
-            matrix[i][i+1] = true
-            start = i
-            max = 1
-        end
-         i += 1
-    end
-
-    i = 0
+    k = 2
     while (k < s.length)
         while (i < s.length - k)
             j = i + k
@@ -208,9 +201,8 @@ def longest_palindrome(s)
         i = 0
     end
 
-    return s[(start_i)..(start_i + max)]
+    return s[(start)..(start + max)]
 end
-
 ```
 
 
