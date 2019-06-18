@@ -35,12 +35,10 @@ For example, these are all palindromes
 
 For this blog I am going to explain solving the problem using a matrix.
 
-There are 4 variables to keep track of.
+There are 3 variables to keep track of.
 1. Index at where the palindrome starts (start)
 2. Length of the palindrome (max)
-3. Start index we are considering (i)
-4. Index offset (k)
-5. The matrix (matrix)
+3. Index offset (k)
 
 
 
@@ -51,9 +49,7 @@ def longest_palindrome(s)
   start = 0
 	max = 0
 	k = 2
-	i = 0
 	
-  matrix = Array.new(s.length) {Array.new(s.length)}
 
 end
 ```
