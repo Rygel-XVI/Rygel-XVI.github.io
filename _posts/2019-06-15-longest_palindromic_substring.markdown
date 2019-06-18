@@ -45,6 +45,7 @@ There are 4 variables to keep track of.
 
 
 
+
 ```
 def longest_palindrome(s)
   start = 0
@@ -99,7 +100,6 @@ We also need to go through and set matrix\[i][i+1] to true if the characters mat
     end
 ```
 
-</br>
 
 
 |   | a | b | b | b | a | b | c |
