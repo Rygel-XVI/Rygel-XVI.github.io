@@ -6,7 +6,7 @@ permalink:  longest_palindromic_substring
 ---
 
 
-### How to find the longest palindromic substring in a string?
+### **How to find the longest palindromic substring in a string?**
 
 
 ### First we have to answer the question 'What is a palindrome?"
@@ -121,7 +121,7 @@ Now if we go through the rest of the comparisons checking if the chars are the s
 
 
 |   | a | b | b | b | a | b | c |
-|---|---|---|:-:|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 | a | T |   |   |   | T |   |   |
 | b |   | T | T | T |   |   |   |
 | b |   |   | T | T |   |   |   |
